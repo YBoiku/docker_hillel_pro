@@ -1,0 +1,13 @@
+version: '3.8'
+
+#volumes:
+#  db_data: { }
+
+services:
+  app:
+    build: .
+
+    volumes:
+#      - db_data: /db
+      - "./output:/wd/output"
+
